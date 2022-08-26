@@ -710,8 +710,18 @@ html {
     border-bottom: 1px solid #17a2b8;
 }
 
+.footer__form-contact::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    right: -1px;
+    top: -1px;
+    border-top: 1px solid #17a2b8;
+}
+
 .footer__form-contact--red,
 .footer__form-contact {
+    position: relative;
     display: flex;
     padding: 8px;
     flex-wrap: wrap;
