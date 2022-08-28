@@ -882,6 +882,8 @@ html {
     outline: none;
     overflow: hidden;
     text-overflow: ellipsis;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 .footer__form-contact-email-input:focus {
