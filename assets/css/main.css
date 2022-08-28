@@ -151,7 +151,25 @@ html {
     z-index: 1;
     border: 10px solid var(--primary-color);
     animation: bulb 1s 1 forwards;
+    -webkit-animation: bulb 1s 1 forwards;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
     display: none;
+}
+
+@-webkit-keyframes bulb {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.55;
+    }
+
+    100% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+        opacity: 0;
+    }
 }
 
 @keyframes bulb {
@@ -223,6 +241,10 @@ html {
     z-index: 1;
     border: 10px solid var(--primary-color);
     animation: bulb 1s 1 forwards;
+    -webkit-animation: bulb 1s 1 forwards;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
     display: none;
 }
 
@@ -416,6 +438,9 @@ html {
     transform: scaleX(1);
     animation: topbot linear 0.35s;
     transition: 0.8s;
+    -webkit-animation: topbot 1s 1 forwards;
+    -webkit-transform: scale(1);
+    -ms-transform: scaleY(1);
     display: none;
 }
 
@@ -431,7 +456,20 @@ html {
     transform: scaleY(1);
     animation: leftright linear 0.35s;
     transition: 0.8s;
+    -webkit-animation: leftright 1s 1 forwards;
+    -webkit-transform: scale(1);
+    -ms-transform: scaleY(1);
     display: none;
+}
+
+@-webkit-keyframes topbot {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
 }
 
 @keyframes topbot {
@@ -441,6 +479,16 @@ html {
 
     to {
         transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes leftright {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
     }
 }
 
@@ -932,7 +980,7 @@ html {
 }
 
 /* >= tablet  */
-@media (min-width: 46.25em) and (max-width: 63.9375em){
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
     .header__search {
         padding-bottom: 60px;
     }
