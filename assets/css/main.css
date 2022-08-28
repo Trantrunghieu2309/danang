@@ -164,7 +164,6 @@ html {
         transform: scale(0.8);
         opacity: 0.55;
     }
-
     100% {
         -webkit-transform: scale(1.4);
         transform: scale(1.4);
@@ -178,7 +177,6 @@ html {
         transform: scale(0.8);
         opacity: 0.55;
     }
-
     100% {
         -webkit-transform: scale(1.4);
         transform: scale(1.4);
@@ -439,11 +437,11 @@ html {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transform: scaleX(1);
-    -ms-transform: scaleX(1);
     -webkit-transform: scaleX(1);
     animation: topbot linear 0.35s;
     -webkit-animation: topbot linear 0.35s;
     transition: 0.8s;
+    -webkit-transition: 0.8s;
     display: none;
 }
 
@@ -457,50 +455,58 @@ html {
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     transform: scaleY(1);
-    -ms-transform: scaleY(1);
     -webkit-transform: scaleY(1);
     animation: leftright linear 0.35s;
     -webkit-animation: leftright linear 0.35s;
     transition: 0.8s;
+    -webkit-transition: 0.8s;
     display: none;
 }
 
 @-webkit-keyframes topbot {
     from {
+        -webkit-transform: scaleX(0);
         transform: scaleX(0);
     }
 
     to {
+        -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
 }
 
 @keyframes topbot {
     from {
+        -webkit-transform: scaleX(0);
         transform: scaleX(0);
     }
 
     to {
+        -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
 }
 
 @-webkit-keyframes leftright {
     from {
+        -webkit-transform: scaleY(0);
         transform: scaleY(0);
     }
 
     to {
+        -webkit-transform: scaleY(1);
         transform: scaleY(1);
     }
 }
 
 @keyframes leftright {
     from {
+        -webkit-transform: scaleY(0);
         transform: scaleY(0);
     }
 
     to {
+        -webkit-transform: scaleY(1);
         transform: scaleY(1);
     }
 }
