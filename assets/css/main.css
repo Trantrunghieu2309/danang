@@ -399,10 +399,6 @@ html {
     background: -o-linear-gradient(bottom left, rgb(8 161 72), rgb(0 161 75 / 22%));
 }
 
-.nav__category:hover~.nav__img::before {
-    display: block;
-}
-
 .nav_img-fluid {
     position: relative;
     width: 100%;
@@ -415,11 +411,11 @@ html {
     padding: 16px;
 }
 
-.nav__category:hover .nav__form::before {
+.nav__img:hover .nav__form::before {
     display: block;
 }
 
-.nav__category:hover .nav__form-caption::before {
+.nav__img:hover .nav__form-caption::before {
     display: block;
 }
 
